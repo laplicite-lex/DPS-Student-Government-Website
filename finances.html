@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diliman Preparatory School — Finances</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>DPS Student Government</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="finances.html">Finances</a>
+        <a href="plans.html">Plans</a>
+        <a href="members.html">Members</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Financial Transparency</h2>
+    <p>All student government financial records are published here for transparency and accountability.</p>
+
+    <section class="section-split">
+      <div>
+        <h3>1️⃣ Embedded Sheet</h3>
+        <p>Holy shit if I configure this right it'll automtically update the right side of this shit, I'm a genius... Probably</p>
+        <!-- Replace with your published Google Sheet embed link -->
+        <div class="embed-wrap">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/e/YOUR_PUBLISHED_ID/pubhtml?widget=true&amp;headers=false"
+            width="100%" height="600" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <h3>2️⃣ Interactive Table + Chart</h3>
+        <div class="controls">
+          <button id="refreshBtn">Refresh Data</button>
+          <a id="downloadCsv" class="btn-outline" target="_blank" rel="noopener">Open CSV</a>
+        </div>
+        <canvas id="summaryChart" style="max-width:100%;height:320px;margin-top:1rem;"></canvas>
+        <div id="tableWrap" class="table-wrap"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Diliman Preparatory School Student Government</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

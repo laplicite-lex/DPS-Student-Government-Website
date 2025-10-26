@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diliman Preparatory School — Student Government</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Diliman Preparatory School</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="finances.html">Finances</a>
+        <a href="plans.html">Plans</a>
+        <a href="members.html">Members</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Student Government Transparency Portal</h2>
+      <p>Empowering students through openness, honesy, and transparency!.</p>
+      <a class="btn" href="finances.html">View Finances →</a>
+    </section>
+
+    <section class="quick">
+      <h3>Latest Announcements</h3>
+      <ul>
+        <li>🎉 Rave night will be hosten on the Pool!~.</li>
+        <li>📘 Launching new Study Hub Project(Prolly) — see the <a href="plans.html">Plans</a> page!</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Diliman Preparatory School Student Government | Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
