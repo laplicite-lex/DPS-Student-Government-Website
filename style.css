@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.loader {
+  text-align: center;
+  padding: 1rem;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+nav a.active {
+  color: var(--gold);
+  border-bottom: 2px solid var(--gold);
+}
+
 :root {
   --gold: #f5c542;
   --black: #0b0b0b;
